@@ -7,13 +7,18 @@ body {
 }
 
 .native-input {
+  box-sizing: border-box;
   width: 200px;
+  height: 40px;
   outline: 0;
   padding: 8px 12px;
   font-size: 16px;
   line-height: 24px;
   border: 1px solid #D3D6DA;
   border-radius: 4px;
+  color: #263147;
+  background: #fff;
+  text-align: left;
 }
 
 .native-input:focus {
