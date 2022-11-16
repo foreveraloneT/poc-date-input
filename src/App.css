@@ -5,3 +5,18 @@
 body {
   color: #263147;
 }
+
+.native-input {
+  width: 200px;
+  outline: 0;
+  padding: 8px 12px;
+  font-size: 16px;
+  line-height: 24px;
+  border: 1px solid #D3D6DA;
+  border-radius: 4px;
+}
+
+.native-input:focus {
+  box-shadow: 0 0 0 2px #d3d6da;
+  border-color: #263147
+}

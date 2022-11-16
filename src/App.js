@@ -12,6 +12,8 @@ const toISO = (value) => {
 function App() {
   const [value, setValue] = React.useState('');
   const [value2, setValue2] = React.useState('1992-09-17');
+  const [value3, setValue3] = React.useState('1992-09-17');
+  const [value4, setValue4] = React.useState('1992-09-17');
 
   const onChange = (e) => {
     setValue(e.target.value)
@@ -19,6 +21,14 @@ function App() {
 
   const onChange2 = (e) => {
     setValue2(e.target.value)
+  }
+
+  const onChange3 = (e) => {
+    setValue3(e.target.value)
+  }
+
+  const onChange4 = (e) => {
+    setValue4(e.target.value)
   }
 
   return (
@@ -50,6 +60,36 @@ function App() {
       </div>
       <div>
         ISO Value: {toISO(value2)}
+      </div>
+
+      <h3>Pure Native Date Input with empty value</h3>
+      <input
+        className="native-input"
+        type="date"
+        value={value3}
+        onChange={onChange3}
+      />
+      <br />
+      <div>
+        Raw Value: {value2}
+      </div>
+      <div>
+        ISO Value: {toISO(value2)}
+      </div>
+
+      <h3>Pure Native Date Input with value (17 Sep 1992)</h3>
+      <input
+        className="native-input"
+        type="date"
+        value={value4}
+        onChange={onChange4}
+      />
+      <br />
+      <div>
+        Raw Value: {value4}
+      </div>
+      <div>
+        ISO Value: {toISO(value4)}
       </div>
     </div>
   );
